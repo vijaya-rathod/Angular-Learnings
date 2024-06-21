@@ -16,7 +16,7 @@ export class EmployeeService {
     return this.http.post<postStructure[]>("https://jsonplaceholder.typicode.com/posts",employee);
   }
   putDetails(employee:Partial<IEmployee[]>):Observable<IEmployee[]>{
-    return this.http.post<IEmployee[]>("https://jsonplaceholder.typicode.com/posts/1",employee);
+    return this.http.put<IEmployee[]>("https://jsonplaceholder.typicode.com/posts/1",employee);
   }
   patchDetails(employee:Partial<patchStructure[]>):Observable<IEmployee[]>{
     return this.http.patch<IEmployee[]>("https://jsonplaceholder.typicode.com/posts/1",employee)
