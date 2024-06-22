@@ -1,0 +1,5 @@
+<h2>Welcome</h2>
+<div *ngFor="let emp of employees">
+  <button (click)="goto(emp.id)">{{emp.name}}</button>
+</div>
+<router-outlet></router-outlet>
