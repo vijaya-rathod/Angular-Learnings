@@ -1,0 +1,4 @@
+<p>employees works!</p>
+<div *ngFor="let emp of allEmployees"> 
+    <button (click)="goTo(emp.id)">{{emp.name}}</button>
+</div>
